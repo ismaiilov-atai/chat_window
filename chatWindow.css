@@ -1,0 +1,196 @@
+* { 
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: url('https://fsa.zobj.net/crop.php?r=vbnXSqrOcta66cJT7GDsyGrL4ymmKtw6cXKH11NSAojEU5VS-56iW0RZbWBWttoVLjnNPscucnu_zsT7EaOsZUGryTGrot5ZcJTlVNOGAhhfuhLeICdJowyrw2HVUUrGTaMRgK-MUlQnFm2jB3K3ACsqbu2WuhNTtzadaM12p3VJcyQFNSSrT17BB6ah1zBViWctSquMonUV-bgS');
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+.arrow_avatar_holder {  
+    display: flex;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    padding: 12;
+    background-color:rgb(236, 240, 242);
+    align-items: center;
+    z-index: 1;
+    border-bottom: 1px solid gray;
+}
+
+section .back_arrow {
+    text-decoration: none;
+}
+
+section .back_avatar {
+    position: relative;
+    height: 90%;
+    padding: 20px;
+    border-radius: 50%;
+}
+.sender_status {
+    font-family: monospace;
+}
+
+.sender_name {
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: sans-serif; 
+}
+
+#add_call {
+    position: absolute;
+    right: 4%;
+    top: 30%;
+    z-index: 1;
+    font-size: 30px;
+    color: black;
+
+}
+
+
+/* below  showes chat window and message bubbles */
+#chat_window {
+    position: relative;
+    top: 60px;
+    bottom: 0;
+    left: 12;
+    right: 12;
+    background-color: transparent;
+    padding: 16px;
+    overflow-y: scroll;
+}
+
+.input_holder {
+    height: 60px; 
+    position: fixed; 
+    bottom: 0;
+    width:100%; 
+    background-color: rgb(236, 240, 242);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    padding: 0 16;
+
+}
+
+.photo_icon {
+    font-size: 28px; 
+    margin-left: 12px;
+    color: rgb(2, 2, 2);
+    padding: 10px;
+}
+
+.attach_file {
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    font-size: 28px;
+    transform: rotate(-38deg);
+    padding: 10px;
+    
+}
+
+.input {
+    width: 88%;
+    position: relative;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+    border-color: transparent;
+    background-color: white;
+    
+
+}
+
+.send_icon {
+    font-size: 38px; 
+    color: rgb(2, 2, 2);
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.circle {
+    position: absolute;
+    width:  100px;
+    height:  30%;
+    border-radius: 50%;
+    background-color: dimgray;
+    bottom: 0;
+    left: 20px;
+    z-index: -1;
+
+}
+
+.resive_side {
+    position: relative;
+    flex-wrap: wrap;
+    top: 0px;
+    width: 40%;
+    background-color: aqua;
+    padding: 20px;
+    margin: 10 10 100 10;
+    border-radius: 15px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.resive_side::after {
+    content: "";
+    display: block; 
+    position: absolute;
+    bottom: -8px;
+    left: 3px;
+    width: 1px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: aqua transparent;
+} 
+
+.sender_side {
+    position: relative;
+    flex-wrap: wrap;
+    top: 0px;
+    width: 40%;
+    left: 55%;
+    background-color: aqua;
+    padding: 20px;
+    margin: 10 10 100 10;
+    text-align: right;
+    border-radius: 15px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.sender_side::after {
+    content: "";
+    display: block; 
+    position: absolute;
+    bottom: -8px;
+    right: 4px;
+    width: 1px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: aqua transparent;
+    
+} 
+
+.timeStamp {
+    color: gray;
+    font-size: 12px;
+    flex-wrap: wrap;
+}
+
+.message {
+    flex-wrap: wrap;
+}
