@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">
+    <link href="./chatWindow.css" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <section class="arrow_avatar_holder">
+            <a href="#" class="back_arrow"><i class="material-symbols-outlined"> arrow_back </i> </a>
+            <img class="back_avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54088iJjHpn-y9FCxGAh5NBEdHugwIXewWQ&usqp=CAU" alt="avatar">
+            <section class="name_status">
+                <p class="sender_name">Kendrick Watler</p>
+                <p class="sender_status">offline</p>
+            </section>
+            <a href="#"><i class="material-symbols-outlined" id="add_call">add_call</i> </a>    
+        </section>
+        
+    </header>
+    <main>
+        <div id="chat_window">
+            
+        </div>
+    </main>
+    
+    <section class="input_holder"> 
+        <a href="#" ><i class="material-symbols-outlined photo_icon">photo_camera</i> </a>
+        <a href="#"><i class="material-symbols-outlined attach_file">attachment</i> </a>
+        <input type="text" id="text" class="input" placeholder="Write your message..." >
+        <a href="#" ><button class="material-symbols-outlined send_icon" id="btn_voice_send">mic</button></a>
+        
+    </section>    
+</body>
+<script src="jquery_full" type="text/javascript"></script>
+<script src="chatWindow.js" type="text/javascript"></script>
+</html>
